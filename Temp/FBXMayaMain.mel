@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:facb760bf9c477fe90e372ed31b18a5335ba7964e27ca71c7951421fd2974864
+size 1835
+=======
+// Unload any plugins before exporting so we don't end up with the wrong version of fbx.
+// unloadPlugin `pluginInfo -query -listPlugins`;
+
+// We need to do the plugin loading in another script because
+// the plugin needs to be loaded before we execute the script! (Names arent't found otherwise)
+if (getApplicationVersionAsFloat() >= 8.0)
+{
+	// Use unqualified path to support Maya 2013, 2015 and future version
+	loadPlugin "fbxmaya";
+	eval ("source \"/Users/catherine1/Documents/ColorsGame/Colors/Temp/FBXMayaExport.mel\"");
+}
+else if (getApplicationVersionAsFloat() >= 7.0)
+{
+	loadPlugin "/Applications/Autodesk/maya2016/Maya.app/Contents/MacOS/plug-ins/fbxmaya.lib";
+	eval ("source \"/Users/catherine1/Documents/ColorsGame/Colors/Temp/FBXMayaExport.mel\"");
+}
+else if (getApplicationVersionAsFloat() >= 6.5)
+{
+	loadPlugin "/Applications/Unity/Unity.app/Contents/Tools/fbxmaya65.lib";
+	eval ("source \"/Users/catherine1/Documents/ColorsGame/Colors/Temp/FBXMayaExport.mel\"");
+}
+else if (getApplicationVersionAsFloat() >= 6.0) 
+{
+	loadPlugin "/Applications/Unity/Unity.app/Contents/Tools/fbxmaya60.lib";
+	eval ("source \"/Users/catherine1/Documents/ColorsGame/Colors/Temp/FBXMayaExport.mel\"");
+}
+else if (getApplicationVersionAsFloat() >= 5.0)
+{
+	loadPlugin "/Applications/Unity/Unity.app/Contents/Tools/fbxmaya50.lib";
+	eval ("source \"/Users/catherine1/Documents/ColorsGame/Colors/Temp/FBXMayaExport5.mel\"");
+}
+else if (getApplicationVersionAsFloat() >= 4.5) 
+{
+	loadPlugin "/Applications/Unity/Unity.app/Contents/Tools/fbxmaya45.lib";
+	eval ("source \"/Users/catherine1/Documents/ColorsGame/Colors/Temp/FBXMayaExport5.mel\"");
+}
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

@@ -1,0 +1,46 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:292f5afdaf9073931fd1c67e6b3bfc9dfa2ca9bd0c6eb23891e1190d0518850b
+size 3745
+=======
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Assembly-CSharp-Editor-firstpass.dll.mdb
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Assembly-CSharp-Editor-firstpass.dll
+/Users/catherine1/Documents/ColorsGame/Colors/obj/Debug/Assembly-CSharp-Editor-firstpass.dll
+/Users/catherine1/Documents/ColorsGame/Colors/obj/Debug/Assembly-CSharp-Editor-firstpass.dll.mdb
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.Advertisements.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/nunit.framework.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.EditorTestsRunner.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.UI.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.Networking.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.PlaymodeTestsRunner.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.PlaymodeTestsRunner.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.TreeEditor.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.Analytics.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.HoloLens.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.VR.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.Graphs.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.iOS.Extensions.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.OSXStandalone.Extensions.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Mono.Cecil.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Unity.DataContract.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll
+/Users/catherine1/Documents/ColorsGame/Colors/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

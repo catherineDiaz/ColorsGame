@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa19f173c6811c98bc6e7e3c025ae3e5497a475a6573b2950e8f465b71b96307
+size 648
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBDocumentLocation</key>
+	<string>69 14 356 240 0 0 1280 832 </string>
+	<key>IBFramework Version</key>
+	<string>439.0</string>
+	<key>IBOpenObjects</key>
+	<array>
+		<integer>5</integer>
+	</array>
+	<key>IBSystem Version</key>
+	<string>8B15</string>
+</dict>
+</plist>
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

@@ -1,0 +1,77 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca0136164dc5878169a7e6c7b87da871b0aa459ea24393b05ee77f864c2e11d8
+size 1092
+=======
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!126 &1
+NavMeshProjectSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  areas:
+  - name: Walkable
+    cost: 1
+  - name: Not Walkable
+    cost: 1
+  - name: Jump
+    cost: 2
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+  - name: 
+    cost: 1
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

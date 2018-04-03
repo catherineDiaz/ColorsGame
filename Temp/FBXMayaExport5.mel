@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b118732a689a359fe7a6f2d4ccd6845a2501453c7b7d1afb5a4bd141f7b418d
+size 1015
+=======
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "/Users/catherine1/Documents/ColorsGame/Colors/Assets/3DModels/waterColorMaze.mb"`)
+{		
+	file -o "/Users/catherine1/Documents/ColorsGame/Colors/Assets/3DModels/waterColorMaze.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "/Users/catherine1/Documents/ColorsGame/Colors/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+sysFile -delete "/Users/catherine1/Documents/ColorsGame/Colors/Temp/CommandPipe";
+
+$donepipeKill = `fopen "/Users/catherine1/Documents/ColorsGame/Colors/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

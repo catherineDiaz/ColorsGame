@@ -1,0 +1,63 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:67100611b33d2c940f7eb1f714244861aa06c73ca1e1283328b4098797253c4d
+size 1498
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>Play</key>
+				<string>id</string>
+				<key>Quit</key>
+				<string>id</string>
+				<key>SaveAndQuit</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>ScreenSelector</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>m_GraphicsQuality</key>
+				<string>id</string>
+				<key>m_Input</key>
+				<string>id</string>
+				<key>m_OptionKey</key>
+				<string>id</string>
+				<key>m_ScreenResolution</key>
+				<string>id</string>
+				<key>m_Windowed</key>
+				<string>id</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>ScreenSelectorTableView</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSTableView</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

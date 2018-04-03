@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:1411d8d28516e57143ba692ac26909324d78e76edbdceeeb245ef153691b1db0
+size 669
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBFramework Version</key>
+	<string>677</string>
+	<key>IBOldestOS</key>
+	<integer>5</integer>
+	<key>IBOpenObjects</key>
+	<array>
+		<integer>11</integer>
+	</array>
+	<key>IBSystem Version</key>
+	<string>9J61</string>
+	<key>targetFramework</key>
+	<string>IBCocoaFramework</string>
+</dict>
+</plist>
+>>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028
