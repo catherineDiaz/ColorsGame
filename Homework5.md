@@ -26,6 +26,6 @@
 
 ## Screenshots
 ![Pic1](/ImagesAndVideos/fallTesting.gif)
-![Pic2](/ImagesAndVideos/travelHomeGif.gif)
+![Pic2](travelHomeGif.gif)
 ![Pic3](/ImagesAndVideos/hw5-1.png))
 ![Pic4](/ImagesAndVideos/hw5-2.png)
