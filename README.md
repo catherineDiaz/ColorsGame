@@ -2,5 +2,6 @@
 
 ## How to Run
 - Navigate to GameBuilds
-- Run GameBuildHW3
+- Download the most recent game build
+- This game runs on Macs
 
