@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:15994f115feb8f37e646c49df95e57d588b9f7d2bb60da0d70c2b22c6127775f
-size 5715
-=======
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,9 +17,10 @@ public class UI : MonoBehaviour {
 	Button useLater;
 
 	//For if a user goes to a portal
-	GameObject travelUI;
-	Button YesTravelNow;
-	Button NoNotNow;
+	GameObject travelUIPaint;
+    GameObject travelUIWaterColor;
+    GameObject travelUIInk;
+
 
 	//For if a user gets paint token
 	GameObject tokenUIPaint;
@@ -52,31 +48,28 @@ public class UI : MonoBehaviour {
 
 	}
 
-	/**
-    	Loads the UI for if a user touched a power, adds listeners to the buttons, adds
-    	power to the power list
-
-	*/
-	public void CollectedPower()
-	{
-		
-		powerUI = Instantiate(Resources.Load("powerUI") as GameObject);
-		useNow = GameObject.Find("UseNow").GetComponent<UnityEngine.UI.Button>();
-		useLater = GameObject.Find("UseLater").GetComponent<UnityEngine.UI.Button>();
-		//playerScript.addPowerToList(ball);
-
-	}
 
 	/**
     	Loads the UI for if a user runs into a portal, wanting to travel
 
 	*/
-	public void TravelUI()
+	public void TravelUI(string nameOfObjectTouched)
 	{
-		travelUI = Instantiate(Resources.Load("travelUI") as GameObject);
-		YesTravelNow = GameObject.Find("YesTravelNow").GetComponent<UnityEngine.UI.Button>();
-		NoNotNow = GameObject.Find("NoNotNow").GetComponent<UnityEngine.UI.Button>();
+        if (nameOfObjectTouched == "PortalToPaint")
+        {
+            travelUIPaint = Instantiate(Resources.Load("TravelToPaint") as GameObject);
 
+        }
+		if (nameOfObjectTouched == "PortalToWaterColor")
+		{
+			travelUIWaterColor = Instantiate(Resources.Load("TravelToWaterColor") as GameObject);
+
+		}
+		if (nameOfObjectTouched == "PortalToInk")
+		{
+			travelUIInk = Instantiate(Resources.Load("TravelToInk") as GameObject);
+
+		}
 
 	}
 
@@ -101,9 +94,6 @@ public class UI : MonoBehaviour {
 		Debug.Log("Transforming into a ball...");
 		ball = GameObject.Find("ballPower").GetComponent<Power>();
 		ball.ApplyPower();
-		GameObject clone = GameObject.Find("powerUI(Clone)");
-		Destroy(clone);
-		Debug.Log("Power UI was destroyed");
 		Destroy(GameObject.Find("ballPower"));
 	}
 
@@ -136,26 +126,84 @@ public class UI : MonoBehaviour {
     	If the user clicks the travel to new universe button then change the scene and move the 
 		player to the new scene with different position
 
+        For Paint Universe
+
 	*/
-	public void YesTravelNowClick()
+	public void YesTravelNowPaintClick()
 	{
 		Debug.Log("Traveling to Paint Universe");
 		SceneManager.LoadScene("PaintUniverse", LoadSceneMode.Single);
 		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("PaintUniverse"));
 		DontDestroyOnLoad(playerObj);
-		playerObj.transform.position = new Vector3(-2.5f,1,4);
-		player.transform.position = new Vector3(-2.5f,1,4);
-		Destroy(travelUI);
+		playerObj.transform.position = new Vector3(0,0,0);
+		player.transform.position = new Vector3(0,0,0);
+		Destroy(travelUIPaint);
+	}
+	/**
+	    If the user clicks the travel to new universe button then change the scene and move the 
+	    player to the new scene with different position
+
+        For Water Color Universe
+
+    */
+	public void YesTravelNowWaterColorClick()
+	{
+		Debug.Log("Traveling to Water Color Universe");
+		SceneManager.LoadScene("WaterColorUniverse", LoadSceneMode.Single);
+		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("WaterColorUniverse"));
+		DontDestroyOnLoad(playerObj);
+		playerObj.transform.position = new Vector3(-2.5f, 1, 4);
+		player.transform.position = new Vector3(-2.5f, 1, 4);
+		Destroy(travelUIWaterColor);
+	}
+	/**
+        If the user clicks the travel to new universe button then change the scene and move the 
+        player to the new scene with different position
+
+        For Ink Universe
+
+    */
+	public void YesTravelNowInkClick()
+	{
+		Debug.Log("Traveling to Ink Universe");
+		SceneManager.LoadScene("InkUniverse", LoadSceneMode.Single);
+		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("InkUniverse"));
+		DontDestroyOnLoad(playerObj);
+		playerObj.transform.position = new Vector3(-2.5f, 1, 4);
+		player.transform.position = new Vector3(-2.5f, 1, 4);
+		Destroy(travelUIInk);
 	}
 
-			
+
 	/**
     	For if the user does not want to travel to a new universe at the moment
+    	
+    	For Paint Universe
 
 	*/
-	public void NoNotNowClick()
+	public void NoNotNowPaintClick()
 	{
-		Destroy(travelUI);
+		Destroy(travelUIPaint);
+	}
+	/**
+	    For if the user does not want to travel to a new universe at the moment
+
+        For Water Color Universe
+
+    */
+	public void NoNotNowWaterColorClick()
+	{
+		Destroy(travelUIWaterColor);
+	}
+	/**
+	    For if the user does not want to travel to a new universe at the moment
+
+        For Ink Universe
+
+    */
+	public void NoNotNowInkClick()
+	{
+		Destroy(travelUIInk);
 	}
 
 	/**
@@ -166,13 +214,30 @@ public class UI : MonoBehaviour {
 	{
 		
 		Debug.Log("Going Back Home From Paint");
-		Destroy(tokenUIPaint);
-
-		SceneManager.LoadScene("Home", LoadSceneMode.Single);
-		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("Home"));
+		SceneManager.LoadScene("HomeLand", LoadSceneMode.Single);
+		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("HomeLand"));
 		DontDestroyOnLoad(playerObj);
 		playerObj.GetComponent<Player>().ChangeBackToPlayer();
-		playerObj.transform.position = new Vector3(309.4f,20f,236.7f);
+		//playerObj.transform.position = new Vector3(0,25,0);
+        //player.transform.position = new Vector3(0, 25, 0);
+
+
+	}
+	/**
+	 
+	    For when the user collects a token and needs to go back to the home land
+
+    */
+	public void GoingBackHomeFromWaterColorClick()
+	{
+
+		Debug.Log("Going Back Home From Water Color");
+		SceneManager.LoadScene("HomeLand", LoadSceneMode.Single);
+		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("HomeLand"));
+		DontDestroyOnLoad(playerObj);
+		playerObj.GetComponent<Player>().ChangeBackToPlayer();
+		playerObj.transform.position = new Vector3(0, 25, 0);
+		player.transform.position = new Vector3(0, 25, 0);
 
 
 	}
@@ -185,4 +250,4 @@ public class UI : MonoBehaviour {
 		
 	}
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028
+

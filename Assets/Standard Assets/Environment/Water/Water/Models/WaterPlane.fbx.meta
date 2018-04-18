@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d38ffad7de61c1fb80045a6ef7c473fc3706791845439d0c88eaf473ab9414a9
-size 1669
-=======
 fileFormatVersion: 2
 guid: ba6a41dc489914734857bb5924eb70ad
 ModelImporter:
@@ -74,4 +69,3 @@ ModelImporter:
   additionalBone: 1
   userData: 
   assetBundleName: 
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

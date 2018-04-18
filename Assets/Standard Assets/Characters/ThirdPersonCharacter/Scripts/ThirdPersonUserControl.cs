@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9d30bb9e0fb0592bf2ea6bd8c033d6875a2c6a961c086929fd5763dda10dfe8
-size 2876
-=======
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -78,4 +73,3 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         }
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

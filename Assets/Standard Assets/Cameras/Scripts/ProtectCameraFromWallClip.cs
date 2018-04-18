@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0dd141e9307b2f6980ed56067262ed48cb81266a7ae8d664129acbfcc04d598
-size 6066
-=======
 using System;
 using System.Collections;
 using UnityEngine;
@@ -127,4 +122,3 @@ namespace UnityStandardAssets.Cameras
         }
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

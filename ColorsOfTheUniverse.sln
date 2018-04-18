@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsOfTheUniverse.Plugins", "ColorsOfTheUniverse.Plugins.csproj", "{0E091424-E3A3-5166-6266-ECA466896AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsOfTheUniverse", "ColorsOfTheUniverse.csproj", "{7807F974-E9E0-D809-0317-19A7D466CE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsOfTheUniverse.Editor.Plugins", "ColorsOfTheUniverse.Editor.Plugins.csproj", "{831DC120-E612-7C91-EA54-AF36D30E946E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E091424-E3A3-5166-6266-ECA466896AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E091424-E3A3-5166-6266-ECA466896AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E091424-E3A3-5166-6266-ECA466896AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E091424-E3A3-5166-6266-ECA466896AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7807F974-E9E0-D809-0317-19A7D466CE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7807F974-E9E0-D809-0317-19A7D466CE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7807F974-E9E0-D809-0317-19A7D466CE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7807F974-E9E0-D809-0317-19A7D466CE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{831DC120-E612-7C91-EA54-AF36D30E946E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{831DC120-E612-7C91-EA54-AF36D30E946E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{831DC120-E612-7C91-EA54-AF36D30E946E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{831DC120-E612-7C91-EA54-AF36D30E946E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

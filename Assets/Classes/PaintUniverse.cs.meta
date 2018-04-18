@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:219d66a8f964a523429c678db5150c727ccfca4ff16182e5872abf03e51c2053
-size 263
-=======
 fileFormatVersion: 2
 guid: 04517589d010c402f8ac660c2afc5e6c
-timeCreated: 1521513786
-licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
@@ -15,4 +9,3 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

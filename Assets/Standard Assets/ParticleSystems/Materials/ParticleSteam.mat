@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:75664394a348d4dcc990dcaee624769011648fa7e16672aa3204f0c29c6e6d07
-size 980
-=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
@@ -42,4 +37,3 @@ Material:
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

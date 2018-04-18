@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e8d41387e1d9ada16a67e93d99b173e103be784a871e6f8b3076cc627c0ec21
-size 21472
-=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!91 &9100000
@@ -809,4 +804,3 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 792, y: 96, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 110298501}
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

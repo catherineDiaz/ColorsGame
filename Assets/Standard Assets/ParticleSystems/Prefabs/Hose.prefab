@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f61f40d4dd5034541217991fe6d45e34d4f517760e9c77dc431eb3041d28cba5
-size 118840
-=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &100000
@@ -5565,4 +5560,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:8454b825ff49d8be0928d4665e18313a9284d61ffa1924ec0f5aaafb743d697b
-size 2379
-=======
 Shader "Particles/Priority Additive" {
 Properties {
 	_TintColor ("Tint Color", Color) = (0.5,0.5,0.5,0.5)
@@ -57,7 +52,7 @@ Category {
 			v2f vert (appdata_t v)
 			{
 				v2f o;
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				#ifdef SOFTPARTICLES_ON
 				o.projPos = ComputeScreenPos (o.vertex);
 				COMPUTE_EYEDEPTH(o.projPos.z);
@@ -108,4 +103,3 @@ Category {
 	}
 }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec75c867f0f8b979ffdf41ba78daefba17aca500b4a4b9312959934b7eda6d5b
-size 2192
-=======
 using System;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -21,12 +16,13 @@ namespace UnityStandardAssets.CrossPlatformInput
         // This define is set or unset by a menu item that is included with
         // the Cross Platform Input package.
 
+
 #if !UNITY_EDITOR
 	void OnEnable()
 	{
 		CheckEnableControlRig();
 	}
-	#endif
+#endif
 
         private void Start()
         {
@@ -50,15 +46,15 @@ namespace UnityStandardAssets.CrossPlatformInput
 
         private void OnEnable()
         {
-            EditorUserBuildSettings.activeBuildTargetChanged += Update;
             EditorApplication.update += Update;
+            EditorUserBuildSettings.activeBuildTargetChanged += Update;
         }
 
 
         private void OnDisable()
         {
-            EditorUserBuildSettings.activeBuildTargetChanged -= Update;
             EditorApplication.update -= Update;
+            EditorUserBuildSettings.activeBuildTargetChanged -= Update;
         }
 
 
@@ -88,4 +84,3 @@ namespace UnityStandardAssets.CrossPlatformInput
         }
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

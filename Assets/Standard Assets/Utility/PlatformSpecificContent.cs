@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8a0275d10221d903f6fb03e2a9865e3c0df265d8505fe035466155fee7ce22d
-size 2623
-=======
 using System;
 using UnityEngine;
 #if UNITY_EDITOR
@@ -39,17 +34,16 @@ namespace UnityStandardAssets.Utility
 
         private void OnEnable()
         {
-            EditorUserBuildSettings.activeBuildTargetChanged += Update;
             EditorApplication.update += Update;
+            EditorUserBuildSettings.activeBuildTargetChanged += Update;
         }
 
 
         private void OnDisable()
         {
-            EditorUserBuildSettings.activeBuildTargetChanged -= Update;
             EditorApplication.update -= Update;
+            EditorUserBuildSettings.activeBuildTargetChanged -= Update;
         }
-
 
         private void Update()
         {
@@ -111,4 +105,3 @@ namespace UnityStandardAssets.Utility
         }
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

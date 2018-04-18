@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9ab86467d80409eae5c7033c18259679a69ea19c8f6e45cff4dfaa946ee1857
-size 2237
-=======
 ﻿Shader "Particles/Priority Additive (Soft)" {
 Properties {
 	_MainTex ("Particle Texture", 2D) = "white" {}
@@ -55,7 +50,7 @@ Category {
 			v2f vert (appdata_t v)
 			{
 				v2f o;
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				#ifdef SOFTPARTICLES_ON
 				o.projPos = ComputeScreenPos (o.vertex);
 				COMPUTE_EYEDEPTH(o.projPos.z);
@@ -107,4 +102,3 @@ Category {
 	}
 }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

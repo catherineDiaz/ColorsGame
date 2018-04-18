@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:aad39b1b89788b406a3cb5a0c41cf061106c2576c420d28fff3b26bafeab09a1
-size 83
-=======
 sceneSetups:
-- path: Assets/Scenes/PaintUniverse.unity
+- path: Assets/Scenes/HomeLand.unity
   isLoaded: 1
   isActive: 1
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

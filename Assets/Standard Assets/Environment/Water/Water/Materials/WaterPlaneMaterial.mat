@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:df255ed9a73419ed2bc43a5a54cfaa24377815ba7d599eec886b3068264bb7fe
-size 3492
-=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
@@ -157,4 +152,3 @@ Material:
         first:
           name: _EmissionColorWithMapUI
         second: {r: 1, g: 1, b: 1, a: 1}
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

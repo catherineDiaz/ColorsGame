@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:879ddfa7a0ba92d481949a11299a36a75c845514c7879a2f653bd96d7c63db7c
-size 3182
-=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
@@ -145,4 +140,3 @@ Material:
         first:
           name: _SpecularColor
         second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

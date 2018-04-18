@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:26c3c20dd94d82c9525cfa2d396939d5e0dc80bcb0fcf2c10244036661c1a53b
-size 7311
-=======
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -202,4 +197,3 @@ namespace UnityStandardAssets.Utility.Inspector
     }
 #endif
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

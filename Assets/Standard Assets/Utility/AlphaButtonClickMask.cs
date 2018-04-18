@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:809a1b568a46129a0fb70db69be560253bc69fe44b549ecdaa69b422f08517f4
-size 1817
-=======
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
@@ -61,4 +56,3 @@ public class AlphaButtonClickMask : MonoBehaviour, ICanvasRaycastFilter
         return c.a> 0.1f;
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

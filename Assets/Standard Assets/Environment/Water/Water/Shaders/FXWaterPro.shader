@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d9526b7339977d0a02db818e1650b4afebc8edc7010884b992e9847d2fa438c
-size 4407
-=======
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 Shader "FX/Water" {
@@ -77,7 +72,7 @@ struct v2f {
 v2f vert(appdata v)
 {
 	v2f o;
-	o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos(v.vertex);
 	
 
 	// scroll bump waves
@@ -166,4 +161,3 @@ ENDCG
 }
 
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

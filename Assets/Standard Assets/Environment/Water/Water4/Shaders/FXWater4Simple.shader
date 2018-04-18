@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:33c18a961c3cce24bcde0dd3c0926a7f2c4fcd832801b7088cc5e5673cc4d5c0
-size 12072
-=======
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 Shader "FX/SimpleWater4" {
@@ -155,7 +150,7 @@ CGINCLUDE
 
 		o.viewInterpolator.xyz = worldSpaceVertex - _WorldSpaceCameraPos;
 
-		o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+		o.pos = UnityObjectToClipPos(v.vertex);
 
 		ComputeScreenAndGrabPassPos(o.pos, o.screenPos, o.grabPassPos);
 		
@@ -253,7 +248,7 @@ CGINCLUDE
 
 		o.viewInterpolator.xyz = worldSpaceVertex - _WorldSpaceCameraPos;
 
-		o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+		o.pos = UnityObjectToClipPos(v.vertex);
 
 		o.screenPos = ComputeNonStereoScreenPos(o.pos);
 		
@@ -322,7 +317,7 @@ CGINCLUDE
 
 		o.viewInterpolator.xyz = worldSpaceVertex-_WorldSpaceCameraPos;
 		
-		o.pos = mul(UNITY_MATRIX_MVP,  v.vertex);
+		o.pos = UnityObjectToClipPos( v.vertex);
 		
 		UNITY_TRANSFER_FOG(o,o.pos);
 		return o;
@@ -438,4 +433,3 @@ Subshader
 
 Fallback "Transparent/Diffuse"
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

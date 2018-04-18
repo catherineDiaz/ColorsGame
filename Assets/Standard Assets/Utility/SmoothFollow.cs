@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:339c08c11b837489fe53f67cd67fbbfc2ec0f33d561c165a9971e0678fd19bf9
-size 1799
-=======
 ﻿using UnityEngine;
 
 namespace UnityStandardAssets.Utility
@@ -64,4 +59,3 @@ namespace UnityStandardAssets.Utility
 		}
 	}
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

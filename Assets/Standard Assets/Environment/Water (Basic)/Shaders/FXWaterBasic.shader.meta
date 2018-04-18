@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:742647f1116b0b984e45f6835900f7b8caeb4d4d850d2b0569b404b9f237da8c
-size 131
-=======
 fileFormatVersion: 2
 guid: 9dccc8e8f0da4494991c26ef59019551
 ShaderImporter:
   defaultTextures: []
   userData: 
   assetBundleName: 
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:42f801d9d17f397239ef4606968da509196f9ce37e3fd59204197b650ecd52d5
-size 7611
-=======
 
 #ifndef WATER_CG_INCLUDED
 #define WATER_CG_INCLUDED
@@ -260,4 +255,3 @@ half4  ExtinctColor (half4 baseColor, half extinctionAmount)
 
 
 #endif
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:897921b5de4079676ce3f41c3f8a60c6d437706339b95ce6734b87b5c96de878
-size 56
-=======
-Build from Catherine's MacBookPro at 02/24/2018 18:20:06
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

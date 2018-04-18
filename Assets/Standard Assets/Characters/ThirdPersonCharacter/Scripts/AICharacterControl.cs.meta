@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:619d824f6afd56bdb8531561da7ac334838a6ff4e5a3555552ab0c69ab5b8827
-size 198
-=======
 fileFormatVersion: 2
 guid: 8c5335f0882fe4d478883cc8c58ce906
 MonoImporter:
@@ -12,4 +7,3 @@ MonoImporter:
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

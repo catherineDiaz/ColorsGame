@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:09c69d4db1593444cea42b7822bd1bea0d3e863ccf82b195b14bb6921ac2ca36
-size 2714
-=======
 Particle System Sample Assets.
 
 We've selected a few sample effects to show a variety of ways our particle system technology can be used. Some use the particle system component alone, and some are augmented using other components. We've provided a sandbox demo scene which allows you to spawn particles and interact with the scene. Here are notes about each system included in the demo scene.
@@ -41,4 +36,3 @@ This effect is an example of using sub emitters to create hundreds of simple par
 
 
 
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

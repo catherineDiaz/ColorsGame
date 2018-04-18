@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ceca579d05617c13551fbb1d4ed4a02019c53df3e95191e645c9ae7747d261f
-size 4832
-=======
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -137,4 +132,3 @@ namespace UnityStandardAssets.CrossPlatformInput
         public abstract Vector3 MousePosition();
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

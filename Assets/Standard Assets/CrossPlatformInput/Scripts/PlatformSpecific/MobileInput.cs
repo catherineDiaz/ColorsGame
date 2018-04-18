@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:11507286c39278f064ced748c174ad27d272980077cee7bcd3839c061744c442
-size 3489
-=======
 using System;
 using UnityEngine;
 
@@ -136,4 +131,3 @@ namespace UnityStandardAssets.CrossPlatformInput.PlatformSpecific
         }
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

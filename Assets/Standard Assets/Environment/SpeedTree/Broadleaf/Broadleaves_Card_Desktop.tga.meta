@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ee02bdbeab158187e631446fb2cd81bc742b3825f8bf2b68a35574f44e62a51
-size 1098
-=======
 fileFormatVersion: 2
 guid: ea60173ceac07334c91568c48cc765cd
 TextureImporter:
@@ -55,4 +50,3 @@ TextureImporter:
   spritePackingTag: 
   userData: 
   assetBundleName: 
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

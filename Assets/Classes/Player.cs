@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:930ff709d21592a4ba4d241b379eaab225bfb5d65e1b5a4daf4fee9e682a6646
-size 2569
-=======
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +18,8 @@ public class Player : Singleton<Player> {
 	GameObject playerObj;
 	int count;
 	GameObject newFollow;
+	public bool completedWaterColor;
+	public bool completedPaint;
 
 	/**
     	Initializes Player object which inherits from the Singleton Class making this object a 
@@ -85,13 +82,14 @@ public class Player : Singleton<Player> {
 	{
 		rollerBall.SetActive(false);
 		player.SetActive(true);
-		//player.transform.position = new Vector3(0, 0, 0);
+		player.transform.position = new Vector3(0, 25, 0);
 
 	}
 		
 	/**
     	Keeps track of the player position, and updates camera follows depending on which form
     	the player is currently in
+
 
 	*/
 
@@ -102,26 +100,28 @@ public class Player : Singleton<Player> {
 
 		if(SceneManager.GetActiveScene().name == "PaintUniverse")
 		{
+            completedPaint = GameObject.Find("paintToken").GetComponent<PaintUniverse>().completedPaint;
 			camera1 = GameObject.Find("FreeLookCameraRig");
 
 			if (isUsingRollerPower == true)
 			{
-				
 				rollerBall.SetActive(true);
-
 				rollerBall.transform.position = player.transform.position;
-
 				player.SetActive(false);
-
+                GameObject ballPower = GameObject.Find("ballPower");
+                Destroy(ballPower);
 				isUsingRollerPower = false;
-			
-				
 			}
 			
 		}
-		Debug.Log(player.transform.position);
 
-		if(SceneManager.GetActiveScene().name == "Home")
+		if (SceneManager.GetActiveScene().name == "WaterColorUniverse")
+		{
+            completedWaterColor = GameObject.Find("waterColorToken").GetComponent<WaterColorUniverse>().completedWaterColor;
+
+		}
+
+		if(SceneManager.GetActiveScene().name == "HomeLand")
 		{
 			if(player != null)
 			{
@@ -135,4 +135,4 @@ public class Player : Singleton<Player> {
 		
 	}
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028
+

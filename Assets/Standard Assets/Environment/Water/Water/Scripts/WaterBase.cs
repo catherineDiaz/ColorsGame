@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:3167384bdda1eea2bc6d79a57757006e4920baea1242a9476044126778108307
-size 2214
-=======
 using System;
 using UnityEngine;
 
@@ -81,4 +76,3 @@ namespace UnityStandardAssets.Water
         }
     }
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028

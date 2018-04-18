@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3066a8e94891849de6951eac1e6d978bb2469b6ecf03380f5f4e6627835fa00
-size 965
-=======
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,4 +42,4 @@ public class CameraFollow : MonoBehaviour {
 
 	}
 }
->>>>>>> 69bef140a0eed029aae24974c9e5e6b45b06b028
+
