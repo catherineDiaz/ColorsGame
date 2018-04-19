@@ -24,7 +24,7 @@
 
 
 ## Screenshots
-![Pic1](/ImagesAndVideos/homeland.png)
+![Pic1](/ImagesAndVideos/home.png)
 ![Pic2](/ImagesAndVideos/paint.png)
 ![Pic3](/ImagesAndVideos/watercolor.png)
 
