@@ -20,6 +20,8 @@ public class Player : Singleton<Player> {
 	GameObject newFollow;
 	public bool completedWaterColor;
 	public bool completedPaint;
+    public bool completedInk;
+    public int inkPieceCount;
 
 	/**
     	Initializes Player object which inherits from the Singleton Class making this object a 
@@ -118,6 +120,12 @@ public class Player : Singleton<Player> {
 		if (SceneManager.GetActiveScene().name == "WaterColorUniverse")
 		{
             completedWaterColor = GameObject.Find("waterColorToken").GetComponent<WaterColorUniverse>().completedWaterColor;
+
+		}
+
+		if (SceneManager.GetActiveScene().name == "InkUniverse")
+		{
+			completedInk = GameObject.Find("inkToken").GetComponent<InkUniverse>().completedInk;
 
 		}
 

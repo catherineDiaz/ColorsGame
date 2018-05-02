@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/OpeningScene.unity
+    guid: fb8b635e6b1b549fca91b7721c704fea
+  - enabled: 1
     path: Assets/Scenes/HomeLand.unity
     guid: b4360e711c539493e8a77138f16fdc52
   - enabled: 1
@@ -14,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WaterColorUniverse.unity
     guid: 07d677e77ebc942088a834ae5dd3dcf1
+  - enabled: 1
+    path: Assets/Scenes/InkUniverse.unity
+    guid: 4e7429a1fb9864c07bc3be041fbc42b3
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 857531c2efd114715b32fda9e9dc39f2

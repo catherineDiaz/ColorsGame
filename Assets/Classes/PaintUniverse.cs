@@ -15,8 +15,7 @@ public class PaintUniverse : MonoBehaviour {
 	int once = 0;
     public bool completedPaint;
     GameObject ball;
-
-
+    GameObject Cam;
 
 
 	/**
@@ -36,11 +35,9 @@ public class PaintUniverse : MonoBehaviour {
         tokenUIPaint.SetActive(false);
         completedPaint = false;
         ball = GameObject.Find("RollerBall");
-        //ball.SetActive(false);
-		
+		Cam = GameObject.Find("FreeLookCameraRig");
+
 	}
-
-
 
 	/**
     	If the token is collected then we launch the UI sending the player back to the home scene
@@ -52,10 +49,10 @@ public class PaintUniverse : MonoBehaviour {
 	{
 		if (gameObject.name == "paintToken" && once == 0) 
 		{
+            completedPaint = true;
 			once = 1;
 			Debug.Log("Paint Token Touched");
 			tokenUIPaint.SetActive(true);
-            completedPaint = true;
 
 		}
 
@@ -82,9 +79,12 @@ public class PaintUniverse : MonoBehaviour {
 
 		if(playerFollow.transform.position.y < -500)
 		{
-			UI fallUI = GameObject.Find("UIController").GetComponent<UI>();
-			player.GetComponent<Player>().ChangeBackToPlayer();
-			fallUI.YesTravelNowPaintClick();
+			Debug.Log("Player has fallen off paint");
+            player.GetComponent<Player>().ChangeBackToPlayer();
+            personController.transform.position = new Vector3(0f, 0f, 0f);
+			player.transform.position = new Vector3(0f, 2f, 0f);
+			Cam.transform.position = new Vector3(-200f, 2f, 0f);
+			
 		}
 
 

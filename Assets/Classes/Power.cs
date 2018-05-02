@@ -70,7 +70,13 @@ public class Power : MonoBehaviour {
 		}
 	}
 
-    public void xRayWallApply(string wallPower)
+	/**
+	    If a power is touched, apply the power to the player
+
+        @param wallPower - name of the power game object that was touched 
+
+    */
+	public void xRayWallApply(string wallPower)
 	{
 		if (wallPower == "xRayWallPower1")
 		{
@@ -128,8 +134,7 @@ public class Power : MonoBehaviour {
 
 	/**
     	Waiting for collision on the power 3D object in the game, if another game object (the Player)
-    	collides with the Power then the UI is initialized and asks the player if they want to use
-    	the power now or later
+    	collides with the Power then apply the power
 
 	*/
 	void OnCollisionEnter (Collision col)
@@ -151,8 +156,10 @@ public class Power : MonoBehaviour {
 
 	}
 
+	/**
+	    Constantly rotate the water color universe token 
 
-
+    */
 	void Update () {
 
 

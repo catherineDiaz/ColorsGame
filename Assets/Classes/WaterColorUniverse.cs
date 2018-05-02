@@ -11,6 +11,7 @@ public class WaterColorUniverse : MonoBehaviour {
     GameObject tokenUIWaterColor;
     public bool completedWaterColor;
     GameObject ball;
+    GameObject Cam;
 
 
 
@@ -27,9 +28,12 @@ public class WaterColorUniverse : MonoBehaviour {
         tokenUIWaterColor = GameObject.Find("tokenUIWaterColor");
         tokenUIWaterColor.SetActive(false);
         completedWaterColor = false;
+		Cam = GameObject.Find("FreeLookCameraRig");
+
 
 
 	}
+
 	/**
 	    If the token is collected then we launch the UI sending the player back to the home scene
 
@@ -44,30 +48,31 @@ public class WaterColorUniverse : MonoBehaviour {
 			Debug.Log("Water Color Token Touched");
             tokenUIWaterColor.SetActive(true);
             completedWaterColor = true;
-
-
 		}
-
 	}
 
+	/**
+        Follow player and if the player falls then restart level
 
 
-    	
-	// Update is called once per frame
+    */
 	void Update () {
 
 
 	    playerFollow.transform.position = personController.transform.position;
+        playerFollow.transform.rotation = personController.transform.rotation;
+
         gameObject.transform.Rotate(Vector3.up * Time.deltaTime * 20);
         gameObject.transform.Rotate(Vector3.right * Time.deltaTime * 15);
 
 		
 
-		if (playerFollow.transform.position.y < -500)
+		if (playerFollow.transform.position.y < -100)
 		{
-			UI fallUI = GameObject.Find("UIController").GetComponent<UI>();
-			player.GetComponent<Player>().ChangeBackToPlayer();
-            fallUI.YesTravelNowWaterColorClick();
+			Debug.Log("Player has fallen off Water Color");
+			personController.transform.position = new Vector3(0f, 0f, 0f);
+			player.transform.position = new Vector3(0f, 0f, 0f);
+			Cam.transform.position = new Vector3(200f, 100f, 0f);
 		}
 		
 	}

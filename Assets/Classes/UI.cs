@@ -36,6 +36,8 @@ public class UI : MonoBehaviour {
 
 	Power ball;
 
+    GameObject Cam;
+
 	/**
     	Initializes the UI object
 
@@ -45,6 +47,7 @@ public class UI : MonoBehaviour {
 		player = GameObject.Find("ThirdPersonController");
 		rollerBall = GameObject.Find("RollerBall");
 		playerObj = GameObject.Find("Player");
+        Cam = GameObject.Find("FreeLookCameraRig");
 
 	}
 
@@ -72,8 +75,6 @@ public class UI : MonoBehaviour {
 		}
 
 	}
-
-
 
 	/**
     	Loads the UI for if a user collects the token at the end of a level
@@ -135,10 +136,12 @@ public class UI : MonoBehaviour {
 		SceneManager.LoadScene("PaintUniverse", LoadSceneMode.Single);
 		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("PaintUniverse"));
 		DontDestroyOnLoad(playerObj);
-		playerObj.transform.position = new Vector3(0,0,0);
-		player.transform.position = new Vector3(0,0,0);
+		playerObj.transform.position = new Vector3(0f, 2f, 0f);
+		player.transform.position = new Vector3(0f, 2f, 0f);
+        Cam.transform.position = new Vector3(-200f, 0f, 0f);
 		Destroy(travelUIPaint);
 	}
+
 	/**
 	    If the user clicks the travel to new universe button then change the scene and move the 
 	    player to the new scene with different position
@@ -152,8 +155,9 @@ public class UI : MonoBehaviour {
 		SceneManager.LoadScene("WaterColorUniverse", LoadSceneMode.Single);
 		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("WaterColorUniverse"));
 		DontDestroyOnLoad(playerObj);
-		playerObj.transform.position = new Vector3(-2.5f, 1, 4);
-		player.transform.position = new Vector3(-2.5f, 1, 4);
+		playerObj.transform.position = new Vector3(0f, 0f, 0f);
+		player.transform.position = new Vector3(0f, 0f, 0f);
+        Cam.transform.position = new Vector3(200f, 100f, 0f);
 		Destroy(travelUIWaterColor);
 	}
 	/**
@@ -169,8 +173,9 @@ public class UI : MonoBehaviour {
 		SceneManager.LoadScene("InkUniverse", LoadSceneMode.Single);
 		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("InkUniverse"));
 		DontDestroyOnLoad(playerObj);
-		playerObj.transform.position = new Vector3(-2.5f, 1, 4);
-		player.transform.position = new Vector3(-2.5f, 1, 4);
+		playerObj.transform.position = new Vector3(0f, 0f, 0f);
+		player.transform.position = new Vector3(0f, 0f, 0f);
+        Cam.transform.position = new Vector3(0f, 0f, -200f);
 		Destroy(travelUIInk);
 	}
 
@@ -216,10 +221,11 @@ public class UI : MonoBehaviour {
 		Debug.Log("Going Back Home From Paint");
 		SceneManager.LoadScene("HomeLand", LoadSceneMode.Single);
 		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("HomeLand"));
-		DontDestroyOnLoad(playerObj);
+        DontDestroyOnLoad(playerObj);
 		playerObj.GetComponent<Player>().ChangeBackToPlayer();
-		//playerObj.transform.position = new Vector3(0,25,0);
-        //player.transform.position = new Vector3(0, 25, 0);
+		player = GameObject.Find("ThirdPersonController");
+		playerObj.transform.position = new Vector3(0,25,0);
+        player.transform.position = new Vector3(0, 25, 0);
 
 
 	}
@@ -232,6 +238,25 @@ public class UI : MonoBehaviour {
 	{
 
 		Debug.Log("Going Back Home From Water Color");
+		SceneManager.LoadScene("HomeLand", LoadSceneMode.Single);
+		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("HomeLand"));
+		DontDestroyOnLoad(playerObj);
+		playerObj.GetComponent<Player>().ChangeBackToPlayer();
+		playerObj.transform.position = new Vector3(0, 25, 0);
+		player.transform.position = new Vector3(0, 25, 0);
+
+
+	}
+
+	/**
+ 
+	For when the user collects a token and needs to go back to the home land
+
+    */
+	public void GoingBackHomeFromInkClick()
+	{
+
+		Debug.Log("Going Back Home From Ink");
 		SceneManager.LoadScene("HomeLand", LoadSceneMode.Single);
 		SceneManager.MoveGameObjectToScene(playerObj, SceneManager.GetSceneByName("HomeLand"));
 		DontDestroyOnLoad(playerObj);
