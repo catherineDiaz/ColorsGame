@@ -14,6 +14,7 @@ An adventure game where the player travels to three different universes and comp
 - Navigate to Builds
 - Download the "FinalBuild" application
 - Run the application once it is downloaded
+- Mac OSX required to run
 
 
 
