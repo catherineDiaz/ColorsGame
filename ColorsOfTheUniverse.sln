@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsOfTheUniverse", "Colo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsOfTheUniverse.Editor.Plugins", "ColorsOfTheUniverse.Editor.Plugins.csproj", "{831DC120-E612-7C91-EA54-AF36D30E946E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsOfTheUniverse.Editor", "ColorsOfTheUniverse.Editor.csproj", "{8D428E32-085F-9702-A729-8C3816FFFD4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{831DC120-E612-7C91-EA54-AF36D30E946E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{831DC120-E612-7C91-EA54-AF36D30E946E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{831DC120-E612-7C91-EA54-AF36D30E946E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D428E32-085F-9702-A729-8C3816FFFD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D428E32-085F-9702-A729-8C3816FFFD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D428E32-085F-9702-A729-8C3816FFFD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D428E32-085F-9702-A729-8C3816FFFD4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

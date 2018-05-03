@@ -16,6 +16,8 @@ public class PaintUniverse : MonoBehaviour {
     public bool completedPaint;
     GameObject ball;
     GameObject Cam;
+    GameObject ballPower;
+    public int fallCount;
 
 
 	/**
@@ -36,6 +38,7 @@ public class PaintUniverse : MonoBehaviour {
         completedPaint = false;
         ball = GameObject.Find("RollerBall");
 		Cam = GameObject.Find("FreeLookCameraRig");
+        fallCount = 0;
 
 	}
 
@@ -79,6 +82,13 @@ public class PaintUniverse : MonoBehaviour {
 
 		if(playerFollow.transform.position.y < -500)
 		{
+            if(personController.activeSelf == false)
+            {
+                fallCount = 1;
+                ballPower = Instantiate(Resources.Load("ballPower") as GameObject);
+
+
+			}
 			Debug.Log("Player has fallen off paint");
             player.GetComponent<Player>().ChangeBackToPlayer();
             personController.transform.position = new Vector3(0f, 0f, 0f);

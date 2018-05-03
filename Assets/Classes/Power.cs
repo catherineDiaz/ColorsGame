@@ -18,6 +18,7 @@ public class Power : MonoBehaviour {
     private GameObject ballText;
     GameObject[] mazeWallArray = new GameObject[28];
     Material mazeWallTransparentMat;
+    int fallCount;
 
 	/**
     	Initializes Power object, the constructor
@@ -57,12 +58,13 @@ public class Power : MonoBehaviour {
 	*/
 	public void ApplyPower()
 	{
-		if(gameObject.name == "ballPower") // If the object touched was the ball power
+        if(gameObject.name == "ballPower" || gameObject.name == "ballPower(Clone)") // If the object touched was the ball power
 		{
 			if(SceneManager.GetActiveScene().name == "PaintUniverse")
 			{
-				GameObject.Find("Player").GetComponent<Player>().isUsingRollerPower = true;	
-                ballText = Instantiate(Resources.Load("ballText") as GameObject);
+
+                GameObject.Find("Player").GetComponent<Player>().isUsingRollerPower = true;	
+                //ballText = Instantiate(Resources.Load("ballText") as GameObject);
 				
 			}
 
@@ -139,7 +141,7 @@ public class Power : MonoBehaviour {
 	*/
 	void OnCollisionEnter (Collision col)
 	{
-		if (gameObject.name == "ballPower" && once == 0) 
+        if ((gameObject.name == "ballPower" || gameObject.name == "ballPower(Clone)") && once == 0) 
 		{
 			once = 1;
 			Debug.Log("Ball Power Object Touched");
@@ -167,6 +169,8 @@ public class Power : MonoBehaviour {
         {
             gameObject.transform.Rotate(Vector3.up * Time.deltaTime * 20);
         }
+
+
 
 
 		

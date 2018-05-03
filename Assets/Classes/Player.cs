@@ -22,7 +22,7 @@ public class Player : Singleton<Player> {
 	public bool completedPaint;
     public bool completedInk;
     public int inkPieceCount;
-
+    int fallCount;
 	/**
     	Initializes Player object which inherits from the Singleton Class making this object a 
     	singleton
@@ -100,22 +100,38 @@ public class Player : Singleton<Player> {
 		position_ = this.transform.position;
 
 
+
 		if(SceneManager.GetActiveScene().name == "PaintUniverse")
 		{
             completedPaint = GameObject.Find("paintToken").GetComponent<PaintUniverse>().completedPaint;
 			camera1 = GameObject.Find("FreeLookCameraRig");
+            fallCount = GameObject.Find("paintToken").GetComponent<PaintUniverse>().fallCount;
 
 			if (isUsingRollerPower == true)
 			{
 				rollerBall.SetActive(true);
 				rollerBall.transform.position = player.transform.position;
 				player.SetActive(false);
-                GameObject ballPower = GameObject.Find("ballPower");
-                Destroy(ballPower);
+
+				if (fallCount == 1)
+				{
+                    GameObject ballPower = GameObject.Find("ballPower(Clone)");
+                    Destroy(ballPower);
+				}
+                else
+                {
+                   GameObject ballPower = GameObject.Find("ballPower"); 
+                   Destroy(ballPower);
+                }
+
+
+
 				isUsingRollerPower = false;
 			}
 			
 		}
+
+
 
 		if (SceneManager.GetActiveScene().name == "WaterColorUniverse")
 		{
